@@ -1,6 +1,6 @@
 package com.yjq.server.service;
 
-import com.yjq.server.dao.TestDao;
+import com.yjq.server.dao.TestMapper;
 import com.yjq.server.domain.Test;
 import org.springframework.stereotype.Service;
 
@@ -17,10 +17,10 @@ import java.util.List;
 public class TestService {
 
     @Resource
-    private TestDao testDao;
+    private TestMapper testMapper;
 
     public List<Test> list(){
-        return testDao.list();
+        return testMapper.selectByExample(null);
     }
 
 }
