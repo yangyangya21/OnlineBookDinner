@@ -1,6 +1,6 @@
-package com.yjq.programmer.dao;
+package com.yjq.server.dao;
 
-import com.yjq.programmer.domain.Test;
+import com.yjq.server.domain.Test;
 
 import java.util.List;
 

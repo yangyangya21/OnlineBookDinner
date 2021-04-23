@@ -1,4 +1,4 @@
-package com.yjq.programmer;
+package com.yjq.eureka;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

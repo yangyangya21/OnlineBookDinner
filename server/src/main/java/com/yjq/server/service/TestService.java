@@ -1,7 +1,7 @@
-package com.yjq.programmer.service;
+package com.yjq.server.service;
 
-import com.yjq.programmer.dao.TestDao;
-import com.yjq.programmer.domain.Test;
+import com.yjq.server.dao.TestDao;
+import com.yjq.server.domain.Test;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

@@ -1,4 +1,4 @@
-package com.yjq.programmer.domain;
+package com.yjq.server.domain;
 
 /**
  * @author 杨杨吖

@@ -12,8 +12,6 @@
 
   <artifactId>gateway</artifactId>
 
-  <name>gateway</name>
-
   <dependencies>
     <!-- spring cloud 网关gateway依赖 -->
     <dependency>

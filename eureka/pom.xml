@@ -12,8 +12,6 @@
 
   <artifactId>eureka</artifactId>
 
-  <name>eureka</name>
-
   <dependencies>
     <!-- spring cloud 注册中心eureka依赖 -->
     <dependency>
