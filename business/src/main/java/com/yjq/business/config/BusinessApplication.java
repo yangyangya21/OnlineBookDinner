@@ -1,4 +1,4 @@
-package com.yjq.system.config;
+package com.yjq.business.config;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
@@ -10,21 +10,21 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 /**
- * 系统模块System启动类
+ * 业务模块Business启动类
  */
 @SpringBootApplication
 @EnableEurekaClient
 @ComponentScan("com.yjq")
 @MapperScan("com.yjq.server.dao")
-public class SystemApplication
+public class BusinessApplication
 {
 
-    private static final Logger LOG = LoggerFactory.getLogger(SystemApplication.class);
+    private static final Logger LOG = LoggerFactory.getLogger(BusinessApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(SystemApplication.class);
+        SpringApplication app = new SpringApplication(BusinessApplication.class);
         Environment env = app.run(args).getEnvironment();
         LOG.info("启动成功！！");
-        LOG.info("System地址: \t http://127.0.0.1:{}", env.getProperty("server.port"));
+        LOG.info("Business地址: \t http://127.0.0.1:{}", env.getProperty("server.port"));
     }
 }

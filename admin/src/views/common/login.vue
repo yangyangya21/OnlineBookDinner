@@ -12,22 +12,22 @@
                                 <span class="twitter-typeahead">
                                 <input type="text" name="phone" class="form-control tt-query" autocomplete="off"
                                        spellcheck="false" dir="auto">
-                            </span>
+                                </span>
+
                                 <label class="mgt10">
                                     密码
                                 </label>
                                 <span class="twitter-typeahead">
                                 <input type="text" name="name" class="form-control tt-query" autocomplete="off"
                                        spellcheck="false" dir="auto">
-                            </span>
-
+                                </span>
                             </div>
                             <div class="form-group">
                                 <div class="btn_control fr">
                                     <a class="btn btn-default bottommargin" @click="openRegister()" id="cancelSubmit">
                                         注册
                                     </a>
-                                    <button formaction="order.html" class="btn btn-info bottommargin" id="stickyGrowl">
+                                    <button class="btn btn-info bottommargin" id="stickyGrowl">
                                         登录
                                     </button>
                                 </div>

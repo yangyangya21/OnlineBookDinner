@@ -20,7 +20,7 @@
                                     <a class="btn btn-default bottommargin" id="cancelSubmit">
                                         注册
                                     </a>
-                                    <button formaction="order.html" class="btn btn-info bottommargin" id="stickyGrowl">
+                                    <button class="btn btn-info bottommargin" id="stickyGrowl">
                                         登录
                                     </button>
                                 </div>
