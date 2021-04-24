@@ -1,6 +1,6 @@
 <template>
     <div id="submitView" class="viewer clearfix" style="">
-        <section class="submit_title">
+        <section class="submit_title" style="height:850px;">
             <div class="container" id="">
                 <div class="col-md-12 clearfix">
                     <div class="now_submit clearfix" style="margin-left:0px;">
@@ -24,7 +24,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="btn_control fr">
-                                    <a class="btn btn-default bottommargin" id="cancelSubmit">
+                                    <a class="btn btn-default bottommargin" @click="openRegister()" id="cancelSubmit">
                                         注册
                                     </a>
                                     <button formaction="order.html" class="btn btn-info bottommargin" id="stickyGrowl">
@@ -42,9 +42,14 @@
 
 <script>
 
-export default {
-  name: 'App'
-}
+    export default {
+        name: 'login',
+        methods:{
+            openRegister(){
+                this.$router.push("/register")
+            }
+        }
+    }
 
 </script>
 
