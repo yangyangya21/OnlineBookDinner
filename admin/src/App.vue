@@ -1,28 +1,53 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="submitView" class="viewer clearfix" style="">
+        <section class="submit_title">
+            <div class="container" id="">
+                <div class="col-md-12 clearfix">
+                    <div class="now_submit clearfix" style="margin-left:0px;">
+                        <form role="form">
+                            <div class="form-group" id="form_info">
+                                <label>
+                                    用户名
+                                </label>
+                                <span class="twitter-typeahead">
+                                <input type="text" name="phone" class="form-control tt-query" autocomplete="off"
+                                       spellcheck="false" dir="auto">
+                            </span>
+                                <label class="mgt10">
+                                    密码
+                                </label>
+                                <span class="twitter-typeahead">
+                                <input type="text" name="name" class="form-control tt-query" autocomplete="off"
+                                       spellcheck="false" dir="auto">
+                            </span>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="btn_control fr">
+                                    <a class="btn btn-default bottommargin" id="cancelSubmit">
+                                        注册
+                                    </a>
+                                    <button formaction="order.html" class="btn btn-info bottommargin" id="stickyGrowl">
+                                        登录
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
+
 </script>
 
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
