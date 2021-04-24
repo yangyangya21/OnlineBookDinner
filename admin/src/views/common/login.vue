@@ -1,6 +1,6 @@
 <template>
-    <div id="submitView" class="viewer clearfix" style="">
-        <section class="submit_title" style="height:850px;">
+    <div id="submitView" class="viewer clearfix">
+        <section class="submit_title">
             <div class="container" id="">
                 <div class="col-md-12 clearfix">
                     <div class="now_submit clearfix" style="margin-left:0px;">
@@ -41,9 +41,12 @@
 </template>
 
 <script>
-
     export default {
         name: 'login',
+        //mounted 页面渲染完后执行 钩子函数
+        mounted:function(){
+            $("body").css("background-color","#f2eeeb");
+        },
         methods:{
             openRegister(){
                 this.$router.push("/register")
