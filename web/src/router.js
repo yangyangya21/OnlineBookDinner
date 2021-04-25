@@ -1,7 +1,7 @@
 import Vue from "vue"
 import Router from "vue-router"
-import Login from "./views/common/login.vue"
-import Register from "./views/common/register.vue"
+import Login from "./views/login.vue"
+import Register from "./views/register.vue"
 
 Vue.use(Router);
 
