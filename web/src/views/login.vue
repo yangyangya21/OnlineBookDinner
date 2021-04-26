@@ -5,6 +5,12 @@
                 <div class="col-md-12 clearfix">
                     <div class="now_submit clearfix" style="margin-left:0px;">
                         <div class="form-group" id="form_info">
+                             <span style="text-align: center;font-size:18px;">
+                                    <label class="mgt10">
+                                    在线点餐系统登录页面
+                                    </label>
+                            </span>
+
                             <label>
                                 用户名
                             </label>
@@ -13,6 +19,7 @@
                                    spellcheck="false" dir="auto">
                             </span>
 
+
                             <label class="mgt10">
                                 密码
                             </label>
@@ -20,6 +27,8 @@
                             <input type="text" v-model="user.password" name="name" class="form-control tt-query" autocomplete="off"
                                    spellcheck="false" dir="auto">
                             </span>
+
+
                         </div>
                         <div class="form-group">
                             <div class="btn_control fr">
@@ -61,7 +70,7 @@
                     if(resp.code == 0){
                         alert("成功");
                     }else{
-                        alert("失败");
+                        alert(resp.msg);
                     }
                 });
             }

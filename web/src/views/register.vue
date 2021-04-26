@@ -6,6 +6,13 @@
                     <div class="now_submit clearfix" style="margin-left:0px;">
                         <form role="form">
                             <div class="form-group" id="form_info">
+                                <span style="text-align: center;font-size:18px;">
+                                    <label class="mgt10">
+                                    在线点餐系统注册页面
+                                    </label>
+                                </span>
+
+
                                 <label class="mgt10">
                                     密码
                                 </label>
