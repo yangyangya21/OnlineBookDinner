@@ -20,6 +20,9 @@ export default new Router({
         component: Register
     }, {
         path: "/dinner",
-        component: Dinner
+        component: Dinner,
+        meta: {
+            loginRequire: true
+        }
     }]
 })

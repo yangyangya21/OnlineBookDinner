@@ -1,6 +1,6 @@
 <template>
    <main role="main">
-       <div>欢迎您，！请挑选您的食物叭！</div>
+       <div>欢迎您，<span v-text="user.username"></span>！请挑选您的食物叭！</div>
        <div id="wrapper" class="viewer">
            <div id="sidebar-wrapper">
                <div class="well sidebar-nav">
@@ -47,11 +47,30 @@
         name: 'dinner',
         data: function() {
             return {
-                iG:{}
+                iG:{},
+                user:{}
+            }
+        },
+        //created 页面渲染前执行 钩子函数
+        created:function() {
+            let _this = this;
+            let token = Tool.getLoginUser();
+            if (Tool.isEmpty(token)) {
+                this.$router.push("/login");
+            }else{
+                //用token去查询用户数据是否仍存在
+                _this.$ajax.post("http://127.0.0.1:9000/business/web/user/check_login", {token:token}).then((response)=>{
+                    let resp = response.data;
+                    if(resp.code == 0){
+                        _this.user = resp.data;
+                    }else{
+                        this.$router.push("/login");
+                    }
+                });
             }
         },
         //mounted 页面渲染完后执行 钩子函数
-        mounted:function(){
+        mounted:function() {
             let  _this = this;
             if(window.localStorage){
                 try{

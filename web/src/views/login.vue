@@ -61,14 +61,15 @@
         },
         methods:{
             openRegister(){
-                this.$router.push("/register")
+                this.$router.push("/register");
             },
             submitLogin(){
                 let _this = this;
                 _this.$ajax.post("http://127.0.0.1:9000/business/web/user/login", _this.user).then((response)=>{
                     let resp = response.data;
                     if(resp.code == 0){
-                        alert("成功");
+                        Tool.setLoginUser(resp.data.token);
+                        this.$router.push("/dinner");
                     }else{
                         alert(resp.msg);
                     }

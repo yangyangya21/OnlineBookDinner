@@ -23,8 +23,8 @@
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/db_online_book_dinner"
-                        userId="book_dinner_user"
-                        password="123456">
+                        userId="root"
+                        password="">
         </jdbcConnection>
 
         <!-- domain类的位置 -->

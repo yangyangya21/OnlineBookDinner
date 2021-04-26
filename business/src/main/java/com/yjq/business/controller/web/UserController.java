@@ -32,8 +32,18 @@ public class UserController {
      * @return
      */
     @PostMapping("/login")
-    public ResponseDto<Boolean> login(@RequestBody UserDto userDto){
+    public ResponseDto<UserDto> login(@RequestBody UserDto userDto){
         return userService.webLogin(userDto);
+    }
+
+    /**
+     * 检查用户是否登录
+     * @param userDto
+     * @return
+     */
+    @PostMapping("/check_login")
+    public ResponseDto<UserDto> checkLogin(@RequestBody UserDto userDto){
+        return userService.checkLogin(userDto);
     }
 
 }
